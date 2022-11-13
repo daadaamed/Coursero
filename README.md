@@ -48,3 +48,8 @@ To deploy the database and migrate the tables, you just have to open the website
 
 Here is what the generated table looks like:
 ![image](https://user-images.githubusercontent.com/47640901/201532973-9f3b18ad-cfc3-4460-8ae0-c15dcaa6e3b7.png)
+
+
+## Personalize your POC
+
+You must type the statement of your exercises in the file `exercises.php`, you are free and must imagine your own exercises.
