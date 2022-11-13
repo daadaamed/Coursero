@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 require_once('vendor/autoload.php');
-require_once('deploy_database.php');
+require_once('deployDatabase.php');
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
 $dotenv->load();
@@ -21,6 +21,12 @@ $dotenv->load();
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">COURSERO</a>
     </nav>
+
+    <br />
+
+    <?php
+        require 'exercises.php';
+    ?>
 
     <br />
 
