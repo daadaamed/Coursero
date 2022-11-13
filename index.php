@@ -46,7 +46,7 @@ $dotenv->load();
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                                <label class="input-group-text" for="exercise-number">Exercice number</label>
+                                <label class="input-group-text" for="exercise-number">Exercise number</label>
                             </div>
                             <select class="custom-select" id="exercise-number" name="exercise_number">
                                 <option selected>Choose...</option>
