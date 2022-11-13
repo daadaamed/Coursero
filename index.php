@@ -61,8 +61,8 @@ $dotenv->load();
                             </div>
                             <select class="custom-select" id="programming-language" name="programming_language">
                                 <option selected>Choose...</option>
-                                <option value="1"><?= $_ENV['PROGRAMMING_LANGUAGE_1'] ?></option>
-                                <option value="2"><?= $_ENV['PROGRAMMING_LANGUAGE_2'] ?></option>
+                                <option value="<?= $_ENV['PROGRAMMING_LANGUAGE_1'] ?>"><?= $_ENV['PROGRAMMING_LANGUAGE_1'] ?></option>
+                                <option value="<?= $_ENV['PROGRAMMING_LANGUAGE_2'] ?>"><?= $_ENV['PROGRAMMING_LANGUAGE_2'] ?></option>
                             </select>
                         </div>
 
