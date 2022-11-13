@@ -24,13 +24,12 @@ $dotenv->load();
 
     <br />
 
-    <?php
-        require 'exercises.php';
-    ?>
-
-    <br />
-
     <div class="container">
+        <?php
+        require 'exercises.php';
+        ?>
+        <br />
+
         <div class="row">
             <div class="col-md-12">
                 <fieldset>

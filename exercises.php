@@ -1,4 +1,4 @@
-<div class="row" style="padding: 12px">
+<div class="row">
     <div class="col-sm-6">
         <div class="card">
             <div class="card-body">
