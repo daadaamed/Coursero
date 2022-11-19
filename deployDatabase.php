@@ -13,8 +13,13 @@ $db_user = $_ENV['DB_USER'];
 $db_pass = $_ENV['DB_PASS'];
 
 $submissions_table = $_ENV['SUBMISSIONS_TABLE'];
+$con = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 
+if (!$con) {
+    die(mysqli_error($con));
+}
 // create database if it doesn't exist
+/* NEW comment
 try {
     $db = new PDO("mysql:host=$db_host", $db_user, $db_pass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -25,14 +30,16 @@ try {
     echo "<br /><blockquote>This error is probably caused by a wrong database configuration. Check your .env file (username, password, database name, etc.)</blockquote>";
     exit();
 }
-
+*/
 // create submissions table if it doesn't exist
+
+
 try {
     $db = new PDO("mysql:host=$db_host;dbname=$db_name", $db_user, $db_pass);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "CREATE TABLE IF NOT EXISTS $submissions_table (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-        name varchar(255) NOT NULL,
+        username varchar(255) NOT NULL,
         exercise_number INT NULL,
         programming_language varchar(100) NULL,
         file_path varchar(255) NULL,
